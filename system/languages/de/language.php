@@ -1,0 +1,573 @@
+<?php
+
+    define('LANG_LOADING',                   'Lade...');
+    define('LANG_SENDING',                   'Sende...');
+    define('LANG_MORE',                      'Mehr');
+    define('LANG_VERSION',                   'Version');
+
+    //CONTENT
+    define('LANG_CONTENT_TYPE',              'Inhaltstyp');
+    define('LANG_CONTENT_TYPE_SETTINGS',     '%s bearbeiten');
+    define('LANG_CONTENT_SELECT_ITEM',       '%s auswählen');
+    define('LANG_CONTENT_ADD_ITEM',          '%s hinzufügen');
+    define('LANG_CONTENT_BIND_ITEM',         '%s verbinden');
+    define('LANG_CONTENT_BIND_ITEMS',        'Verbinden');
+    define('LANG_CONTENT_UNBIND_ITEM',       '%s loslösen');
+    define('LANG_CONTENT_UNBIND_ITEMS',      'Loslösen');
+    define('LANG_CONTENT_EDIT_ITEM',         '%s bearbeiten');
+    define('LANG_CONTENT_DELETE_ITEM',       '%s löschen');
+    define('LANG_CONTENT_DELETE_ITEM_CONFIRM',  'Sind Sie wirklich sicher, dass Sie %s löschen möchten?');
+    define('LANG_CONTENT_NOT_APPROVED',      'Ausstehend');
+    define('LANG_CONTENT_NOT_IS_PUB',		 'Nicht veröffentlicht');
+
+    define('LANG_CONTENT_BIND_ITEM_FIND_HINT','Введите часть значения');
+    define('LANG_CONTENT_OWN_ITEMS',		  'Nur meine');
+
+    define('LANG_SHOW_FILTER',               'Filter anzeigen');
+    define('LANG_FILTER',                    'Filter');
+    define('LANG_FILTERS',                   'Filter');
+    define('LANG_FILTER_FIELD',              'Nach Feld filtern');
+    define('LANG_FILTER_ADD',                'Filter hinzufügen');
+    define('LANG_FILTER_LIKE',               'enthält');
+    define('LANG_FILTER_LIKE_BEGIN',         'beginnt mit');
+    define('LANG_FILTER_LIKE_END',           'endet mit');
+    define('LANG_FILTER_DATE_YOUNGER',       'nicht älter, Tage');
+    define('LANG_FILTER_DATE_OLDER',         'nicht neuer, Tage');
+    define('LANG_FILTER_NOT_NULL',           'gefüllt');
+    define('LANG_FILTER_IS_NULL',            'leer');
+    define('LANG_FILTER_APPLY',              'Filtern');
+    define('LANG_FILTER_URL',                'URL');
+    define('LANG_FILTER_SAVE_DIFF_ORDER',    'Verschiedene Sortierung speichern');
+    define('LANG_SORTING_FIELD',             'Nach Feld sortieren');
+    define('LANG_SORTING',                   'Sortierung');
+    define('LANG_SORTING_ADD',               'Regel erstellen');
+    define('LANG_SORTING_ASC',               'Aufsteigend');
+    define('LANG_SORTING_DESC',              'Absteigend');
+    define('LANG_PHOTO',                     'Bild');
+    define('LANG_PHOTOS',                    'Fotos');
+    define('LANG_COMMENTS',                  'Kommentare');
+    define('LANG_RATING',                    'Bewertung');
+    define('LANG_KARMA',                     'Reputation  ');
+    define('LANG_KARMA_UP',                  'Nach oben bewegen');
+    define('LANG_KARMA_DOWN',                'Nach unten bewegen');
+    define('LANG_CSS_CLASS',                 'CSS-Klasse');
+    define('LANG_CSS_CLASS_WRAP',            'CSS-Klasse des Containers');
+    define('LANG_CSS_CLASS_TITLE',           'CSS-Klasse des Titels');
+    define('LANG_CSS_CLASS_BODY',            'CSS-Klasse des Bodys');
+    define('LANG_GROUP',                     'Gruppe');
+    define('LANG_GROUPS',                    'Gruppen');
+    define('LANG_WROTE_IN_GROUP',            'in der Gruppe');
+    define('LANG_DESIGN',					 'Design');
+
+    //WIDGETS
+    define('LANG_WP_SYSTEM',                 'System');
+    define('LANG_WP_CUSTOM',                 'Benutzerdefinierte');
+    define('LANG_WP_ALL_PAGES',              'Alle Seiten');
+    define('LANG_WP_HOME_PAGE',              'Startseite');
+    define('LANG_WIDGET_TAB_PREV',           'Mit vorherigem Widget zusammenführen');
+    define('LANG_WIDGET_TITLE_LINKS',        'URL im Widget-Header');
+    define('LANG_WIDGET_TITLE_LINKS_HINT',   'В формате <b><em>Заголовок | URL</em></b>, например <b><em>Яндекс | http://www.yandex.ru</em></b><br>Если ссылка обернута в фигурные скобки <b>{ }</b> она будет показана только авторизованным пользователям<br>Одна ссылка в каждой строке');
+    define('LANG_WIDGET_WRAPPER_TPL',		 'Vorlage für Container');
+    define('LANG_WIDGET_WRAPPER_TPL_HINT',	 'Название файла из папки <b>widgets</b> вашего шаблона, без расширения <b>.tpl.php</b>');
+    define('LANG_WIDGET_BODY_TPL',			 'Vorlage für Widget');
+    define('LANG_WIDGET_BODY_TPL_HINT',	     'Название файла из папки <b>%s</b> вашего шаблона, без расширения <b>.tpl.php</b>');
+    define('LANG_WIDGET_DEVICE',			 'На каких устройствах показывать виджет');
+    define('LANG_DESKTOP_DEVICES',  'Computer');
+    define('LANG_TABLET_DEVICES',  'Tablet');
+    define('LANG_MOBILE_DEVICES',  'Telefon');
+
+    //PARSERS
+    define('LANG_PARSER_BITMASK_CHECKBOX_MULTIPLE', 'Мультивыбор чекбоксами');
+    define('LANG_PARSER_BITMASK_LIST_CLASS', 'Listenklass');
+    define('LANG_PARSER_BITMASK_MAX',        'Maximale Anzahl von Einträge in der Liste');
+    define('LANG_PARSER_BITMASK_MAX_HINT',   'in Systemwerte');
+    define('LANG_PARSER_CAPTION',            'Titel');
+    define('LANG_PARSER_STRING',             'Stringfeld');
+    define('LANG_PARSER_HIDDEN',             'Verstecktes Feld');
+    define('LANG_PARSER_NUMBER',             'Zahl');
+    define('LANG_PARSER_NUMBER_FILTER_RANGE','Nach Bereich filtern');
+    define('LANG_PARSER_NUMBER_UNITS',       'Maßeinheit');
+    define('LANG_PARSER_CITY',               'Ort');
+    define('LANG_PARSER_CITY_LOCATION_TYPE', 'Ortstyp');
+    define('LANG_PARSER_CITY_LOCATION_GROUP', 'Titel für Gruppierung');
+    define('LANG_PARSER_CITY_LOCATION_GROUP_HINT', 'Если необходимо объединить местоположения страна-область-город, укажите одно имя объединения для всех полей. Как минимум должны быть созданы поля типа "страна" и "область"');
+    define('LANG_PARSER_CITY_OUTPUT_STRING', 'Строка вывода значения поля');
+    define('LANG_PARSER_CITY_OUTPUT_STRING_HINT', 'Zum Beispiel, "{country}, {city}", wobei country und city sind Systemfelder. Полезно использовать, отключая для вывода остальные поля группировки, показывая нужные значения в этом поле. Если не указано - выводится значение текущего поля.');
+    define('LANG_PARSER_CHECKBOX',           'Checkbox');
+    define('LANG_PARSER_TEXT',               'Text');
+    define('LANG_PARSER_TEXT_MAX_LEN',       'Maximale Länge');
+    define('LANG_PARSER_TEXT_MIN_LEN',       'Minimale Länge');
+    define('LANG_PARSER_SHOW_SYMBOL_COUNT',  'Beim Tippen, die Zeichenzahl anzeigen');
+    define('LANG_PARSER_HTML',               'HTML-Text');
+    define('LANG_PARSER_HTML_EDITOR',        'HTML-Editor');
+    define('LANG_PARSER_HTML_FILTERING',     'Inhalt vorbereiten');
+    define('LANG_PARSER_BUILD_REDIRECT_LINK', 'При обработке типографом внешние ссылки формировать через редирект');
+    define('LANG_PARSER_HTML_TEASER_LEN',    'Den Text in Listenansicht kürzen');
+    define('LANG_PARSER_HTML_TEASER_LEN_HINT','Текст будет обрезан до указанной длины, форматирование будет удалено');
+    define('LANG_PARSER_BBCODE',             'Text: BB-code');
+    define('LANG_PARSER_LIST',               'Liste');
+    define('LANG_PARSER_LIST_FILTER_HINT',   'Optionnummer');
+    define('LANG_PARSER_LIST_FILTER_MULTI',  'Mehrfachauswahl im Filter');
+    define('LANG_PARSER_LIST_GROUPS',        'Liste der Benutzergruppen');
+    define('LANG_PARSER_LIST_GROUPS_SHOW_GUESTS',     'Den Eintrag "Gäste" anzeigen');
+    define('LANG_PARSER_LIST_IS_MULTIPLE',   'Mehrfachauswahl aktivieren');
+    define('LANG_PARSER_LIST_MULTIPLE',      'Liste: Mehrfachauswahl');
+    define('LANG_PARSER_LIST_MULTIPLE_SHOW_ALL',      'Den Eintrag "Alle" anzeigen');
+    define('LANG_PARSER_URL',                'URL');
+    define('LANG_PARSER_URL_REDIRECT',       'Ссылки через редирект');
+    define('LANG_PARSER_URL_AUTO_HTTP',      'http:// automatisch hinzufügen');
+    define('LANG_PARSER_URL_TITLE',          'Dem Link ein Titel geben');
+    define('LANG_PARSER_URL_NOFOLLOW',       'Attribut rel="nofollow" hinzufügen ');
+    define('LANG_PARSER_URL_CSS_CLASS',      'CSS-Klasse für URL');
+    define('LANG_PARSER_URL_TITLE_HINT',     'Для отображения названия ссылки, введите ее название через знак "|", zum Beispiel: http://google.de|Google');
+    define('LANG_PARSER_AGE',                'Alter');
+    define('LANG_PARSER_AGE_DATE_TITLE',     'Заголовок даты начала отсчета');
+    define('LANG_PARSER_AGE_FILTER_RANGE',   'Nach Bereich filtern');
+    define('LANG_PARSER_AGE_FROM_DATE',      'Считать от указанной даты');
+    define('LANG_PARSER_AGE_FROM_DATE_HINT', 'Если не указано, отсчет будет вестись от текущего значения времени');
+    define('LANG_PARSER_DATE',               'Datum');
+    define('LANG_PARSER_DATE_FILTER_HINT',   '(JJJJ-MM-TT)');
+    define('LANG_PARSER_DATE_SHOW_TIME',     'Zeit anzeigen');
+    define('LANG_PARSER_USER',               'Benutzer');
+    define('LANG_PARSER_USER_FILTER_HINT',   'Benutzer-ID');
+    define('LANG_PARSER_USERS',              'Benutzerliste');
+    define('LANG_PARSER_PARENT',             'Übergeordnete');
+    define('LANG_PARSER_IMAGE',              'Bild');
+    define('LANG_PARSER_IMAGE_SPELL',        'Bild|Bilder|Bilder');
+    define('LANG_PARSER_IMAGES',             'Bildersätze');
+    define('LANG_PARSER_IMAGE_ALLOW_IMPORT_LINK', 'Разрешить добавление по ссылке');
+    define('LANG_PARSER_FIRST_IMAGE_EMPHASIZE', 'Erstes Bild im Beitrag markieren');
+    define('LANG_PARSER_IMAGE_MAX_COUNT',    'Maximale Anzahl von Bilder');
+    define('LANG_PARSER_IMAGE_MAX_COUNT_HINT', 'Maximum %s');
+	define('LANG_PARSER_SMALL_IMAGE_PRESET', 'Vorschaubild-Voreinstellung');
+    define('LANG_PARSER_IMAGE_SIZE_UPLOAD',  'Vorschaubilder erstellen');
+    define('LANG_PARSER_IMAGE_SIZE_TEASER',  'Größe in der Liste');
+    define('LANG_PARSER_IMAGE_SIZE_FULL',    'Größe in der Beitrag');
+    define('LANG_PARSER_IMAGE_SIZE_MODAL',   'Größe in der Beitrag beim Klicken');
+    define('LANG_PARSER_IMAGE_SIZE_MICRO',   'Mikro');
+    define('LANG_PARSER_IMAGE_SIZE_SMALL',   'Klein');
+    define('LANG_PARSER_IMAGE_SIZE_NORMAL',  'Mittel');
+    define('LANG_PARSER_IMAGE_SIZE_BIG',     'Groß');
+    define('LANG_PARSER_IMAGE_SIZE_ORIGINAL','Original');
+    define('LANG_PARSER_COLOR',              'Farbe');
+    define('LANG_PARSER_FILE',               'Datei');
+    define('LANG_PARSER_FILE_LABEL',         'Dateilink-Titel');
+    define('LANG_PARSER_FILE_LABEL_NAME',    'Dateiname');
+    define('LANG_PARSER_FILE_LABEL_GET',     'Herunterladen');
+    define('LANG_PARSER_FILE_EXTS',          'Erlaubte Dateiendungen');
+    define('LANG_PARSER_FILE_EXTS_HINT',     'Liste von Dateiendungen, kommagetrennt');
+    define('LANG_PARSER_FILE_EXTS_FIELD_HINT',     'Erlaubte Dateitypen: %s');
+    define('LANG_PARSER_FILE_SIZE_FIELD_HINT',     'Maximale Dateigröße: %s');
+    define('LANG_PARSER_FILE_MAX_SIZE',      'Maximale Dateigröße, MB');
+    define('LANG_PARSER_FILE_MAX_SIZE_PHP',  'Nicht mehr als %s Mb (Begrenzung in den PHP Einstellungen)');
+    define('LANG_PARSER_FILE_SHOW_SIZE',     'Dateigröße anzeigen ');
+    define('LANG_PARSER_CURRENT_TIME',       'Aktuelle Zeit');
+    define('LANG_PARSER_IN_FULLTEXT_SEARCH', 'Beteiligt sich an der Volltextsuche');
+    define('LANG_PARSER_IN_FULLTEXT_SEARCH_HINT', 'Warnung! Beim Bearbeiten dieser Option, der Index wurde neu aufgebaut. Dies kann abhängig von der Größe deiner Tabellen sehr lange dauern.');
+    define('LANG_PARSER_ADD_FROM_LINK', 'добавить по ссылке');
+    define('LANG_PARSER_ENTER_IMAGE_LINK', 'Gib eine Web-Adresse des Bildes');
+    define('LANG_OR', 'oder');
+    define('LANG_BEGIN_TYPING', 'Начните вводить или выберите из списка');
+
+    //USERS
+    define('LANG_USER',                      'Benutzer');
+    define('LANG_USERS',                     'Benutzer');
+    define('LANG_AUTHOR',                    'Autor');
+    define('LANG_REGISTRATION',              'Registrierung');
+    define('LANG_USER_REGISTRATION',         'Benutzerregistrierung');
+    define('LANG_CREATE_ACCOUNT',            'Konto erstellen');
+    define('LANG_LOG_IN',                    'Anmelden');
+    define('LANG_LOG_IN_ACCOUNT',            'Melde dich an mit Nutzerkonto');
+    define('LANG_LOG_IN_OPENID',             'Bei sozialen Netzwerken anmelden ');
+    define('LANG_LOG_OUT',                   'Abmelden');
+    define('LANG_NO_ACCOUNT',                'Du hast kein Konto?');
+    define('LANG_REG_FIRST_TIME',            'Zum ersten Mal bei uns?');
+    define('LANG_REG_ALREADY',               'Bist du schon registriert?');
+    define('LANG_EMAIL',                     'E-Mail-Adresse');
+    define('LANG_PASSWORD',                  'Passwort');
+    define('LANG_RETYPE_PASSWORD',           'Wiederhole Passwort');
+    define('LANG_USER_GROUP',                'Gruppe');
+    define('LANG_USER_IS_ADMIN',             'Administrator');
+    define('LANG_LOGIN_ERROR',               'Anmeldung fehlgeschlagen. Prüfen Sie deine E-Mail-Adresse und das Passwort');
+    define('LANG_LOGIN_REQUIRED',            'Для доступа к запрошенной странице необходима авторизация');
+    define('LANG_LOGIN_ADMIN_ONLY',          'Nur ein Administrator auf der geschlossene Seite anmelden kann');
+    define('LANG_NICKNAME',                  'Spitzname');
+    define('LANG_ADMIN',                     'Administrator');
+    define('LANG_EMAIL_FIND',                'Suche nach E-Mail');
+    define('LANG_FIND',                      'Suchen');
+    define('LANG_MY_PROFILE',                'Mein Profil');
+    define('LANG_PROFILE',                   'Profil');
+    define('LANG_CITY',                      'Stadt');
+    define('LANG_REGION',                    'Bereich');
+    define('LANG_COUNTRY',                   'Land');
+    define('LANG_COMPANY',                   'Firma');
+    define('LANG_PHONE',                     'Telefon');
+    define('LANG_NAME',                      'Name');
+    define('LANG_SURNAME',                   'Nachname');
+    define('LANG_CHANGE_PASS',               'Passwort ändern');
+    define('LANG_OLD_PASS',                  'Aktuelles Passwort');
+    define('LANG_OLD_PASS_INCORRECT',        'Aktuelles Passwort wurde nicht korrekt eingegeben');
+    define('LANG_NEW_PASS',                  'Neues Passwort');
+    define('LANG_RETYPE_NEW_PASS',           'Neues Passwort wiederholen');
+    define('LANG_PASS_CHANGED',              'Passwort erfolgreich geändert');
+    define('LANG_REMEMBER_ME',               'Eingeloggt bleiben');
+    define('LANG_PLEASE_LOGIN',              'Stelle dich bitte vor');
+    define('LANG_LOGIN_ADMIN',               'Anmeldung für Administratoren');
+    define('LANG_ONLINE',                    'Online');
+    define('LANG_USERS_PROFILE_LAST_IP',     'Letztes IP');
+    define('LANG_USERS_PROFILE_LOGDATE',     'Letzter Besuch');
+
+    //MODERATION
+    define('LANG_MODERATION',                'Moderieren');
+    define('LANG_MODERATOR',                 'Moderator');
+    define('LANG_MODERATORS',                'Moderatoren');
+    define('LANG_MODERATION_SUCCESS',        'Moderiert');
+    define('LANG_MODERATION_APPROVE',        'Veröffentlichung erlauben');
+    define('LANG_MODERATION_APPROVED',       'Seite veröffentlicht');
+    define('LANG_MODERATION_APPROVED_BY',    'Von einem Moderator wurde freigegeben');
+    define('LANG_MODERATION_PM_AUTHOR',      'An Autor schreiben');
+    define('LANG_MODERATION_NOTICE',         'Der Artikel wird veröffentlicht, wenn ein Moderator es freigegeben hat');
+    define('LANG_MODERATION_IDLE',           'Отправлено уведомление модератору %s');
+    define('LANG_MODERATION_NO_TASKS',       'Keine Beiträge die Moderation erfordern');
+    define('LANG_MODERATION_NOTIFY',         'Neue Seite wartet auf Freischaltung');
+
+    //PERMISSIONS
+    define('LANG_PERMISSIONS',               'Zugriff');
+    define('LANG_PERM_RULE',                 'Zugriffsregeln');
+    define('LANG_PERM_OPTION_NULL',          'Keine');
+    define('LANG_PERM_OPTION_OWN',           'Nur eigene');
+    define('LANG_PERM_OPTION_ALL',           'Alle');
+    define('LANG_PERM_OPTION_TO_OWN',        'Nur in eigenen');
+    define('LANG_PERM_OPTION_TO_OTHER',      'Nur in fremden');
+    define('LANG_PERM_OPTION_TO_ALL',        'In allen');
+    define('LANG_PERM_OPTION_OWN_TO_OWN',    'Eigene auf eigene');
+    define('LANG_PERM_OPTION_OWN_TO_OTHER',  'Eigene auf fremde');
+    define('LANG_PERM_OPTION_OWN_TO_ALL',    'Eigene auf alle');
+    define('LANG_PERM_OPTION_OTHER_TO_OWN',  'Fremde auf eigene');
+    define('LANG_PERM_OPTION_OTHER_TO_OTHER','Fremde auf eigene');
+    define('LANG_PERM_OPTION_OTHER_TO_ALL',  'Fremde auf alle');
+    define('LANG_PERM_OPTION_ALL_TO_OWN',    'Alle auf eigene');
+    define('LANG_PERM_OPTION_ALL_TO_OTHER',  'Alle auf fremde');
+    define('LANG_PERM_OPTION_ALL_TO_ALL',    'Alle auf alle');
+    define('LANG_SHOW_TO_GROUPS',            'Den Gruppen anzeigen');
+    define('LANG_HIDE_FOR_GROUPS',           'Den Gruppen nicht anzeigen');
+    define('LANG_SHOW_TO_COUNTRIES',         'Den Ländern anzeigen');
+    define('LANG_HIDE_TO_COUNTRIES',         'Den Ländern nicht anzeigen');
+    define('LANG_ACCESS_DENIED',             'Zugriff verboten');
+    define('LANG_ACCESS_GROUP_HINT',         'Gruppen, denen sie angehören, haben keinen Zugriff auf diese Seite');
+    define('LANG_ACCESS_COUNTRY_HINT',       'Diese Seite ist in deinem Land nicht verfügbar');
+
+    //AUTHORIZATION
+    define('LANG_AUTH_LOGIN',			 'Anmeldename');
+    define('LANG_AUTH_PASSWORD',		 'Passwort');
+
+    //PASSWORD RESTORE
+    define('LANG_FORGOT_PASS',               'Passwort vergessen?');
+
+    //SYSTEM ERRORS
+    define('LANG_ERROR',					 'Fehler');
+    define('LANG_FORM_ERRORS',				 'Fehler im Formular gefunden');
+    define('LANG_TRACE_STACK',				 'Letzte Aufrufe');
+    define('ERR_COMPONENT_NOT_FOUND',		 'Komponente nicht gefunden');
+    define('ERR_MODEL_NOT_FOUND',			 'Datenmodell nicht gefunden oder es ist nicht beschreibbar');
+    define('ERR_TEMPLATE_NOT_FOUND', 		 'Template nicht gefunden oder es ist nicht beschreibbar');
+    define('ERR_LIBRARY_NOT_FOUND', 		 'Bibliothek nicht gefunden oder es ist nicht beschreibbar');
+    define('ERR_FILE_NOT_FOUND',             'Es wurde keine Datei gefunden');
+    define('ERR_CLASS_NOT_FOUND', 		 	 'Klasse nicht gefunden oder ist nicht beschreibbar');
+    define('ERR_MODULE_NOT_FOUND', 		 	 'Modul nicht gefunden');
+    define('ERR_DATABASE_QUERY', 		 	 '<b>Fehler bei Datenbankabfrage</b>: <p>%s</p>');
+    define('ERR_DATABASE_CONNECT', 		 	 'Fehler beim Aufbau einer Datenbankverbindung');
+    define('ERR_PAGE_NOT_FOUND', 		 	 'Die Seite konnte nicht gefunden werden');
+    define('ERR_FORBIDDEN', 		 	     'Zugriff verboten');
+    define('ERR_SITE_OFFLINE',               'Website ist Offline');
+    define('ERR_SITE_OFFLINE_FULL',          'Website ist Offline. <a href="%s">Aktivieren?</a>');
+    define('ERR_SEARCH_TITLE',               'Suchen');
+    define('ERR_SEARCH_QUERY_INPUT',         'Was suchen Sie?');
+
+
+    //UPLOAD ERRORS
+    define('LANG_UPLOAD_ERR_OK',             'Die Datei wurde erfolgreich hochgeladen');
+    define('LANG_UPLOAD_ERR_INI_SIZE', 		 'Dateigröße überschreitet das Limit: %s');
+    define('LANG_UPLOAD_ERR_FORM_SIZE',      'Dateigröße überschreitet das Limit');
+    define('LANG_UPLOAD_ERR_PARTIAL', 		 'Die Datei wurde nur teilweise hochgeladen');
+    define('LANG_UPLOAD_ERR_NO_FILE', 		 'Es wurde keine Datei hochgeladen');
+    define('LANG_UPLOAD_ERR_NO_TMP_DIR',     'Das Ordner für temporäre Dateien konnte nicht auf dem Server gefunden werden');
+    define('LANG_UPLOAD_ERR_CANT_WRITE', 	 'Fehler beim Speichern der Datei auf der Festplatte');
+    define('LANG_UPLOAD_ERR_EXTENSION', 	 'Der Datei-Upload wurde unerwartet beendet');
+    define('LANG_UPLOAD_ERR_MIME',           'Ungültiges Format der Datei');
+
+    //MONEY
+    define('LANG_CURRENCY',                  '€');
+
+    //VALIDATION ERRORS
+    define('ERR_VALIDATE_REQUIRED',          'Das Feld muss ausgefüllt werden');
+    define('ERR_VALIDATE_MIN',               'Das Wert ist zu klein (minimum: %s)');
+    define('ERR_VALIDATE_MAX',               'Das Wert ist zu Groß (maximum: %s)');
+    define('ERR_VALIDATE_MIN_LENGTH',        'Das Wert ist zu kurz (minimale Zeichenanzahl: %s)');
+    define('ERR_VALIDATE_MAX_LENGTH',        'Das Wert ist zu lang (maximale Zeichenanzahl: %s)');
+    define('ERR_VALIDATE_EMAIL',             'Ungültiges E-Mail-Format');
+    define('ERR_VALIDATE_REGEXP',            'Ungültiges Format');
+    define('ERR_VALIDATE_ALPHANUMERIC',      'Nur lateinsiche Buchstaben und Ziffern');
+    define('ERR_VALIDATE_SYSNAME',           'Nur lateinische Kleinbuchstaben, Zahlen und Unterstrich-Zeichen.');
+    define('ERR_VALIDATE_SLUG',              'Nur lateinische Kleinbuchstaben, Zahlen, Bindestrichen und Senkrechter Strich');
+    define('ERR_VALIDATE_DIGITS',            'Geben Sie nur nummerische Zeichen');
+    define('ERR_VALIDATE_NUMBER',            'Geben Sie eine Zahl');
+    define('ERR_VALIDATE_UNIQUE',            'Dieses Wert wird bereits verwendet');
+    define('ERR_VALIDATE_INVALID',           'Es gibt ungültige Wert');
+
+    define('LANG_VALIDATE_REQUIRED',         'Dieses Feld muss ausgefüllt sein');
+    define('LANG_VALIDATE_DIGITS',           'Nur ganzzahlige Werte');
+    define('LANG_VALIDATE_NUMBER',           'Nur Zahlen');
+    define('LANG_VALIDATE_ALPHANUMERIC',     'Nur lateinsiche Buchstaben und Ziffern');
+    define('LANG_VALIDATE_EMAIL',            'E-Mail-Adresse');
+    define('LANG_VALIDATE_UNIQUE',           'Eindeutiges Wert');
+
+    define('ERR_REQ_EMAIL', 		 	 	 'E-Mail muss angegeben werden!');
+    define('ERR_EMPTY_FIELDS', 			 	 'Leere Felder gefunden!');
+    define('ERR_NICKNAME_EXISTS', 			 'Der Spitzname &laquo;%s&raquo; ist schon vergeben');
+    define('ERR_WRONG_OLD_PASS', 		 	 'Fehler bei der Passwortänderung: Altes Passwort wurde nicht korrekt eingegeben');
+    define('ERR_NEW_PASS_MISMATCH', 		 'Fehler bei der Passwortänderung: Passwörter stimmen nicht überein');
+    define('ERR_NEW_PASS_REQUIRED', 		 'Sie müssen neues Passwort wiederholen!');
+
+    //CAPTCHA
+    define('LANG_CAPTCHA_CODE', 		 	 'Anti-Spam-Einstellungen');
+    define('LANG_CAPTCHA_ERROR', 		 	 'Anti-Spam-Code ist nicht korrekt');
+
+    //LISTS
+    define('LANG_NO_ITEMS', 		 		 'Es konnten keine Einträge gefunden werden');
+
+    //ACTIONS
+    define('LANG_ADD_CATEGORY',              'Kategorien erstellen');
+    define('LANG_ADD_CATEGORY_QUICK',        'oder neue Kategorie innerhalb der ausgewählten Kategorie erstellen');
+    define('LANG_EDIT_CATEGORY',             'Kategorie bearbeiten');
+    define('LANG_DELETE_CATEGORY',           'Kategorie löschen');
+    define('LANG_DELETE_CATEGORY_CONFIRM',   'Sind Sie sicher, dass Sie die Kategorie löschen möchten?\nAlle Inhalte wird als Folge dieser Aktion gelöscht!');
+    define('LANG_ADD_FOLDER_QUICK',          'oder neuen Ordner erstellen');
+    define('LANG_EDIT_FOLDER',               'Ordner bearbeiten');
+    define('LANG_DELETE_FOLDER',             'Ordner löschen');
+    define('LANG_DELETE_FOLDER_CONFIRM',     'Sind Sie sicher, dass Sie den Ordner löschen möchten?\nAlle Inhalte wird als Folge dieser Aktion gelöscht!');
+
+    define('LANG_BY_DEFAULT',                'Standardeinstellungen');
+    define('LANG_BASIC_OPTIONS',             'Allgemein');
+    define('LANG_YES',                       'Ja');
+    define('LANG_NO',                        'Nein');
+    define('LANG_LIST_LIMIT',                'Einträge pro Liste');
+    define('LANG_LIST_ALL',					 'Alle anzeigen');
+    define('LANG_LIST_EMPTY',                'Es konnten keine Einträge gefunden werden');
+    define('LANG_LIST_NONE_SELECTED',        'Nichts ausgewählt');
+    define('LANG_DOWNLOAD',                  'Herunterladen');
+    define('LANG_UPLOAD',                    'Hochladen');
+    define('LANG_SELECT_UPLOAD',             'Auswählen und zuschneiden');
+    define('LANG_DROP_TO_UPLOAD',            'Dateien hierher ziehen, um die herunterzuladen');
+    define('LANG_CREATE',                    'Erstellen');
+    define('LANG_APPLY',                     'Bestätigen');
+    define('LANG_ACCEPT',                    'Freigeben');
+    define('LANG_DECLINE',                   'Ablehnen');
+    define('LANG_CONFIRM',                   'Überprüfen');
+    define('LANG_INVITE',                    'Einzuladen');
+    define('LANG_ADD', 						 'Hinzufügen');
+    define('LANG_ADD_CONTENT',				 'Seite erstellen');
+    define('LANG_ADD_USER',                  'Benutzer anlegen');
+    define('LANG_ADD_NEWS',					 'News hinzufügen');
+    define('LANG_ADD_MENU',				 	 'Menü erstellen');
+    define('LANG_ADD_MENUITEM',				 'Menüeintrag erstellen');
+    define('LANG_MENU_MORE',                 'Mehr');
+    define('LANG_VIEW', 					 'Vorschau');
+    define('LANG_EDIT', 					 'Bearbeiten');
+    define('LANG_EDIT_SELECTED',			 'Auswahl bearbeiten');
+    define('LANG_SHOW', 					 'Anzeigen');
+    define('LANG_SHOW_ALL',                  'Alle anzeigen');
+    define('LANG_SHOW_SELECTED',			 'Auswahl anzeigen');
+    define('LANG_ADMIN_SELECTED', 			 'Сделать выбранных администраторами');
+    define('LANG_UNADMIN_SELECTED',			 'Снять администраторские права у выделенных');
+    define('LANG_HIDE', 					 'Verbergen');
+    define('LANG_HIDE_SELECTED',			 'Auswahl verbergen');
+    define('LANG_CONFIG', 					 'Einstellungen');
+    define('LANG_RESTORE', 					 'Wiederherstellen');
+    define('LANG_DELETE', 					 'Löschen');
+    define('LANG_DELETE_SUCCESS', 	         'Beitrag erfolgreich gelöscht');
+    define('LANG_BASKET_TITLE', 			 'Papierkorb von Beiträge');
+    define('LANG_BASKET_DELETE', 			 'In den Papierkorb legen');
+    define('LANG_BASKET_DELETE_SUCCESS', 	 'Beitrag erfolgreich in den Papierkorb gelegt');
+    define('LANG_BASKET_DELETE_LEFT_TIME', 	 'Материал будет в корзине %s, после чего удалится окончательно');
+    define('LANG_ITEM_RESTORE_SUCCESS', 	 'Der Beitrag wurde erfolgreich wiederhergestellt');
+    define('LANG_DELETE_SELECTED',			 'Auswahl löschen');
+    define('LANG_DELETE_SELECTED_CONFIRM',   'Ausgewählte Elemente entfernen?');
+    define('LANG_MOVE',                      'Verschieben');
+    define('LANG_MOVE_TO_CATEGORY',          'Zu einer Kategorie verschieben');
+    define('LANG_ON',	 					 'An');
+    define('LANG_OFF', 						 'Aus');
+    define('LANG_SAVE',						 'Speichern');
+    define('LANG_SAVE_CHANGES',              'Änderungen speichern');
+    define('LANG_SAVE_ORDER',                'Reihenfolge speichern');
+    define('LANG_SAVING',                    'Speichere...');
+    define('LANG_PREVIEW',                   'Vorschau');
+    define('LANG_SEND',						 'Senden');
+    define('LANG_INSTALL',					 'Installieren');
+    define('LANG_INSERT',					 'Einfügen');
+    define('LANG_CANCEL',					 'Abbrechen');
+    define('LANG_BACK',					 	 'Zurück');
+    define('LANG_IN_QUEUE',					 'Artikel in der Warteschlange');
+    define('LANG_SELECT',                    'Auswählen');
+    define('LANG_SELECT_MULTIPLE',           'Mehrere auswählen');
+    define('LANG_SELECT_ALL',				 'Alle auswählen');
+    define('LANG_DESELECT_ALL',				 'Alle abwählen');
+    define('LANG_INVERT_ALL',				 'Invertieren');
+    define('LANG_CLOSE',                     'Schließen');
+    define('LANG_CONTINUE',                  'Weiter');
+    define('LANG_OPTIONS',                   'Optionen');
+    define('LANG_REPLY',                     'Antworten');
+    define('LANG_REPLY_SPELLCOUNT',          'Antwort|Antworten|Antworten');
+    define('LANG_FROM',                      'von');
+    define('LANG_TO',                        'bis');
+    define('LANG_IS_ENABLED',                'Aktivität');
+    define('LANG_HELP',                      'Hilfe');
+    define('LANG_HELP_URL',                  'http://docs.instantcms.ru/en/');
+    define('LANG_IN',                        'in');
+
+    //NAVIGATION
+    define('LANG_HOME',                      'Hauptseite');
+    define('LANG_BACK_TO_HOME',              'Zurück zur Hauptseite');
+    define('LANG_PAGE_NEXT', 				 'Weiter');
+    define('LANG_PAGE_PREV',                 'Zurück');
+    define('LANG_PAGE_FIRST', 				 'Erste');
+    define('LANG_PAGE_LAST',                 'Letzte');
+    define('LANG_PAGES', 					 'Seiten');
+    define('LANG_PAGE', 					 'Seite');
+    define('LANG_PAGE_ADD',                  'Seite hinzufügen');
+    define('LANG_PAGE_DELETE',               'Seite löschen');
+    define('LANG_PAGE_CURRENT_DELETE',       'Aktuelle Seite löschen');
+    define('LANG_PAGES_SHOWN',               'Angezeigt %s von %s');
+    define('LANG_PAGES_SHOW_PERPAGE',        'Anzeigen');
+
+    //FORMS
+    define('LANG_SUBMIT', 					 'Senden');
+    define('LANG_SUBMIT_NOT_SAVE',			 'Seite verlassen? Änderungen werden nicht gespeichert.');
+
+    //LAYOUT
+    define('LANG_PAGE_BODY',                 'Seitenbody');
+    define('LANG_PAGE_MENU',                 'Seitenmenu');
+    define('LANG_PAGE_HEADER',               'Seitenkopf');
+    define('LANG_PAGE_FOOTER',               'Seitenfußzeile');
+    define('LANG_PAGE_LOGO',                 'Logo');
+    define('LANG_MENU',                      'Menü');
+    define('LANG_TITLE', 					 'Titel');
+    define('LANG_SHOW_TITLE',                'Titel anzeigen');
+    define('LANG_SYSTEM_NAME',               'Systemname');
+    define('LANG_SYSTEM_EDIT_NOTICE',	     '<b>Warnung:</b> Beim Bearbeiten der system Name, das Feld wurde neu erstellt und alle aktuelle Daten gehen verloren!');
+    define('LANG_DESCRIPTION',               'Beschreibung');
+    define('LANG_INFORMATION',               'Information');
+    define('LANG_CONTENT', 					 'Inhalt');
+    define('LANG_CATEGORY',                  'Kategorie');
+    define('LANG_CATEGORY_TITLE',            'Name der Kategorie');
+    define('LANG_CATEGORY_DESCRIPTION',      'Kategoriebeschreibung');
+    define('LANG_FOLDER',                    'Ordner');
+    define('LANG_ROOT_NODE',                 'Root');
+    define('LANG_ROOT_CATEGORY',             'Rootkategorie');
+    define('LANG_PARENT_CATEGORY',           'Übergeordnete Kategorie');
+    define('LANG_ADDITIONAL_CATEGORIES',	 'Zusätzliche Kategorien');
+    define('LANG_MESSAGE', 					 'Nachrichtentext');
+    define('LANG_DATE', 					 'Datum');
+    define('LANG_DATE_PUB',                  'Veröffentlichungsdatum');
+    define('LANG_PUBLICATION',				 'Veröffentlichung');
+    define('LANG_SLUG',                      'URL');
+    define('LANG_PRIVACY',                   'Privatsphäre');
+    define('LANG_PRIVACY_PUBLIC',            'Sichtbar für alle');
+    define('LANG_PRIVACY_PRIVATE',           'Sichtbar nur für Freunde');
+    define('LANG_PRIVACY_PRIVATE_HINT',      'Dies ist ein privater Beitrag. Nur für Freunde des Autors sichtbar.');
+    define('LANG_ON_FRONT',				 	 'Auf der Startseite');
+    define('LANG_SHOWED',					 'Angezeigt');
+    define('LANG_ORDER',					 'Reihenfolge');
+    define('LANG_ORDER_DOWN',				 'Nach unten verschieben');
+    define('LANG_ORDER_UP',					 'Nach oben verschieben');
+    define('LANG_HITS_SPELL',                'Aufruf|Aufrufe|Aufrufe');
+    define('LANG_HITS',                      'Aufrufe');
+    define('LANG_GUEST',                     'Gast');
+
+    //SEO
+    define('LANG_SEO',                       'SEO');
+    define('LANG_ROOT_SEO',                  'Rolle für die Startseite');
+    define('LANG_SEO_TITLE',                 'Seitentitel');
+    define('LANG_SEO_KEYS',                  'Schlagwörter');
+    define('LANG_SEO_KEYS_HINT',             'Stichwörter der Seite, kommagetrennt');
+    define('LANG_SEO_DESC',                  'Beschreibung');
+    define('LANG_SEO_DESC_HINT',             'Kurzbeschreibung der Seite für Suchmaschinen');
+    define('LANG_TAGS',                      'Schlagwörter');
+    define('LANG_TAGS_HINT',                 'Schlagwörter, kommagetrennt');
+
+    //FILES
+    define('LANG_B',               'Bytes');
+    define('LANG_KB',              'KiB');
+    define('LANG_MB',              'MiB');
+    define('LANG_GB',              'GiB');
+    define('LANG_TB',              'TiB');
+    define('LANG_PB',              'Pb');
+
+    //UNITS
+    define('LANG_UNIT1',                     'Einheit');
+    define('LANG_UNIT2',                     'Einheiten');
+    define('LANG_UNIT10',                    'Einheiten');
+    define('LANG_CH1',                       'Zeichen');
+    define('LANG_CH2',                       'Zeichen');
+    define('LANG_CH10',                      'Zeichen');
+
+    define('LANG_ISLEFT',                    'noch verfügbar');
+
+    //DATES
+    define('LANG_ALL',                       'Alle');
+    define('LANG_JUST_NOW',                  'Vor Kurzem');
+    define('LANG_SECONDS_AGO',               'Weniger als Minute');
+    define('LANG_YESTERDAY',                 'Gestern');
+    define('LANG_TODAY',                     'Heute');
+    define('LANG_TOMORROW',                  'Morgen');
+    define('LANG_WEEK',                      'Woche');
+    define('LANG_WEEK1',                     'Woche');
+    define('LANG_WEEK2',                     'Wochen');
+    define('LANG_WEEK10',                    'Wochen');
+    define('LANG_THIS_WEEK',                 'In dieser Woche');
+    define('LANG_THIS_MONTH',                'Nächster Monat');
+    define('LANG_EVENTS_THIS_WEEK',          'Ereignisse in dieser Woche');
+    define('LANG_CALENDAR',                  'Kalender');
+    define('LANG_TIME_ZONE',                 'Zeitzone');
+    define('LANG_YEAR',                      'Jahr');
+    define('LANG_YEARS',                     'Jahre');
+    define('LANG_YEAR1',                     'Jahr');
+    define('LANG_YEAR2',                     'Jahre');
+    define('LANG_YEAR10',                    'Jahre');
+    define('LANG_MONTHS',                    'Monate');
+    define('LANG_MONTH',                     'Monat');
+    define('LANG_MONTH1',                    'Monat');
+    define('LANG_MONTH2',                    'Monate');
+    define('LANG_MONTH10',                   'Monate');
+    define('LANG_DAYS',                      'Tage');
+    define('LANG_DAY1',                      'Tag');
+    define('LANG_DAY2',                      'Tage');
+    define('LANG_DAY10',                     'Tage');
+    define('LANG_HOURS',                     'Stunden');
+    define('LANG_HOUR1',                     'Stunde');
+    define('LANG_HOUR2',                     'Stunden');
+    define('LANG_HOUR10',                    'Stunden');
+    define('LANG_MINUTES',                   'Minuten');
+    define('LANG_MINUTE1',                   'Minute');
+    define('LANG_MINUTE2',                   'Minuten');
+    define('LANG_MINUTE10',                  'Minuten');
+    define('LANG_SECONDS',                   'Sekunde');
+    define('LANG_SECOND1',                   'Sekunden');
+    define('LANG_SECOND2',                   'sekunden');
+    define('LANG_SECOND10',                  'Sekunden');
+    define('LANG_DATE_AGO',                  'vor %s');
+    define('LANG_AUTO',                      'Auto');
+    //MAIL
+    define('LANG_MAIL_DEFAULT_ALT',          'Для просмотра сообщения требуется почтовый клиент с поддержкой HTML');
+
+    define('LANG_POWERED_BY_INSTANTCMS',     'Präsentiert von <a href="http://instantcms.ru/">InstantCMS</a>');
+    define('LANG_ICONS_BY_FATCOW',           'Symbole von <a href="http://www.fatcow.com/free-icons">FatCow</a>');
+    define('LANG_SUCCESS_MSG',               'Daten gespeichert');
+
+    define('LANG_DEBUG_QUERY_TIME',          'Aufgewendete Zeit');
+    define('LANG_DEBUG',                     'Fehlersuche (Debug)');
+    define('LANG_DEBUG_TAB_DB',              'SQL');
+    define('LANG_DEBUG_TAB_CACHE',           'Caching');
+    define('LANG_DEBUG_TAB_EVENTS',          'Ereignisse');
+    define('LANG_DEBUG_TAB_WIDGETS',         'Widgets');
+    define('LANG_DEBUG_TAB_INCLUDES',        'Подключенные файлы');
